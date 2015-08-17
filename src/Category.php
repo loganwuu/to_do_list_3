@@ -46,7 +46,7 @@ class Category
           foreach($returned_categories as $category) {
             $name = $category['name'];
             $id = $category['id'];
-            $new_categories = new Category($name, $id);
+            $new_category = new Category($name, $id);
             array_push($categories, $new_category);
           }
           return $categories;
