@@ -18,7 +18,7 @@ class Category
 
       function setId($new_id)
       {
-        $this->id = $new_id;
+          $this->id = $new_id;
       }
 
       function setName($new_name)
