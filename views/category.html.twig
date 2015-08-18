@@ -17,11 +17,11 @@
                 </ul>
             {% endif %}
 
-            <h4>Add a task</h4>
+            <h4>Add a task:</h4>
 
             <form action="/tasks" method="post">
                 <input id="category_id" type="hidden" name="category_id" value="{{ category.getId() }}">
-                <label for="description">Task Description</label>
+                <label for="description">Task Description:</label>
                 <input id="description" type="text" name="description">
 
                 <button type="submit" class="btn btn-info">Add task</button>
@@ -30,11 +30,11 @@
             <form action="/">
                 <button type="submit" class="btn btn-success">Home</button>
             </form>
-{#
+
             <form action="/delete_tasks/categories/{id}" method="post">
                 <button type="submit" class="btn btn-danger">Clear Tasks</button>
             </form>
-#}
+
         </div>
     </body>
 </html>

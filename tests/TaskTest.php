@@ -17,6 +17,7 @@
         protected function tearDown()
         {
             Task::deleteAll();
+            Category::deleteAll();
         }
 
         function test_getId()
@@ -64,6 +65,7 @@
 
             $description = "Wash the dog";
             $category_id = $test_category->getId();
+            //$due_date = '0000-00-00';
             $test_task = new Task($description, $id, $category_id);
 
             $test_task->save();
