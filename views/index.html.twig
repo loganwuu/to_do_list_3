@@ -13,7 +13,7 @@
                 <label for="name">Category name:</label>
                 <input type="text" name="name" id="name">
 
-                <button type="submit" class="btn btn-default">Add category</button>
+                <button type="submit" class="btn btn-info">Add category</button>
             </form>
 
             {% if categories is not empty %}
@@ -26,11 +26,10 @@
             {% else %}
                 <p>There are no categories yet!</p>
             {% endif %}
-{#
-            <form action="/tasks">
-                <button type="submit" class="btn btn-default">Tasks</button>
+
+            <form action="/delete_categories" method="post">
+                <button type="submit" class="btn btn-danger">Clear Categories</button>
             </form>
-#}
         </div>
     </body>
 </html>
