@@ -9,11 +9,15 @@
       {% if tasks is not empty %}
           <p>Here are all your tasks:</p>
 
-          <ul>
+
               {% for task in tasks %}
-                  <li>{{ task.getDescription }}</li>
+                  <h5>{{ task.getDescription }}</h5>
+                  <ul>
+                      <li>{{ task.getDueDate }}</li>
+                  </ul>
+
               {% endfor %}
-          </ul>
+          
       {% endif %}
 
       <form action="/tasks" method="post">
